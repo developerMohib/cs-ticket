@@ -14,7 +14,7 @@ export default function Navbar() {
                     </a>
 
                     {/* Mobile menu button */}
-                    <div className="flex lg:hidden">
+                    <div className="flex md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"
@@ -81,6 +81,14 @@ export default function Navbar() {
                         <a className="my-2 text-gray-700 hover:text-blue-500 md:mx-4 md:my-0" href="/">
                             Contact
                         </a>
+                    </div>
+
+                    {/* Button */}
+                    <div className="flex justify-center md:block">
+                        <button className="flex items-center gap-1 text-xs font-semibold text-white rounded p-2 bg-gradient-to-r from-[#5f2eea] via-[#7a4ff0] to-[#9b6cf3] shadow-lg hover:scale-105 transition-all duration-300">
+                            <span>+</span>
+                            New Ticket
+                        </button>
                     </div>
                 </div>
             </div>
