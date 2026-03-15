@@ -25,6 +25,10 @@ const Task = () => {
     }, []);
 
     const handleTicketBooked = (ticket) => {
+         if (activeTickets.find(t => t.id === ticket.id)) {
+            notify("Ticket is already booked");
+            return
+        }
         if (!activeTickets.find(t => t.id === ticket.id)) {
             notify("Ticket is booked now");
             setActiveTickets([...activeTickets, ticket]);
@@ -33,6 +37,7 @@ const Task = () => {
 
     const handleComplete = (bookTicket) => {
         setLoading(true)
+        
         // Add to resolved
         notify("Resolve the ticket")
         setResolvedTasks([...resolvedTasks, bookTicket]);
