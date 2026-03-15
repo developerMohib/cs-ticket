@@ -6,8 +6,8 @@ The UI is built based on a Figma design and includes additional functionality su
 
 ---
 
-## 🚀 Features
-
+## 🚀 Features 
+## [video explaination] (https://youtu.be/0whrgK3Kf1w)
 ### Navbar
 - Website name/logo on the left
 - Menu items and **New Ticket** button on the right
